@@ -1,6 +1,7 @@
 import React from "react";
 import ShowMedia from "./ShowMedia";
 import Description from "./Description";
+import styled from 'styled-components';
 
 function MediaContainer({ setDate, title, description, mediaURL, mediaType }) {
   return (
