@@ -11,7 +11,7 @@ function ShowMedia({ mediaType, mediaURL }) {
       controls="true"
     />
   ) : (
-    <div class="image-container">
+    <div className="image-container">
       <img src={mediaURL} alt="NASA" width="40%" height="5%" />
     </div>
   );
