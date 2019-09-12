@@ -24,6 +24,7 @@ function MediaContainer({ setDate, title, description, mediaURL, mediaType }) {
   return (
     <div className="content-container">
       <div className="input-container">
+          <p>Pick a day!</p>
         <StyledInput onChange={e => setDate(e.target.value)} type={"date"} ></StyledInput>
       </div>
       <ShowMedia mediaType={mediaType} mediaURL={mediaURL} />
