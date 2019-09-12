@@ -9,8 +9,9 @@ const StyledInput = styled.input`
   box-sizing: border-box;
   border: 1px solid white;
   background: transparent;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 8px;
+  width: 230px;
   ::-webkit-datetime-edit-text { padding: 0 2rem; }
   ::-webkit-datetime-edit-month-field { text-transform: uppercase; }
   ::-webkit-datetime-edit-day-field { text-transform: uppercase; }
@@ -23,7 +24,7 @@ function MediaContainer({ setDate, title, description, mediaURL, mediaType }) {
   return (
     <div className="content-container">
       <div className="input-container">
-        <StyledInput onChange={e => setDate(e.target.value)} type={"date"}></StyledInput>
+        <StyledInput onChange={e => setDate(e.target.value)} type={"date"} ></StyledInput>
       </div>
       <ShowMedia mediaType={mediaType} mediaURL={mediaURL} />
       <Description title={title} description={description} />
