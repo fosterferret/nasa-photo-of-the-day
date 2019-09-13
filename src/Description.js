@@ -1,11 +1,20 @@
 import React from "react";
+import styled from "styled-components";
+
+const StyledDescription = styled.div`
+  p {
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-bottom: 10px;
+  }
+`;
 
 function Description({ title, description }) {
   return (
-    <div className="desc-container">
+    <StyledDescription className="desc-container">
       <h3>{title}</h3>
       <p>{description}</p>
-    </div>
+    </StyledDescription>
   );
 }
 

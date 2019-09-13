@@ -2,6 +2,17 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import MediaContainer from "./MediaContainer";
+import styled from "styled-components";
+
+const StyledApp = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+`;
 
 function App() {
   const [mediaURL, setMediaURL] = useState();
@@ -29,7 +40,7 @@ function App() {
 
   return (
     <>
-      <div className="App container">
+      <StyledApp className="App container">
         <div className="heading">
           <h2>NASA Photo of the Day</h2>
         </div>
@@ -42,7 +53,7 @@ function App() {
           setDate={setDate}
           mediaURL={mediaURL}
         />
-      </div>
+      </StyledApp>
     </>
   );
 }

@@ -5,7 +5,7 @@ function ShowMedia({ mediaType, mediaURL }) {
   return mediaType === "video" ? (
     <ReactPlayer
       url={mediaURL}
-      width="80%"
+      width="100%"
       height="60vh"
       alt="NASA"
       controls="true"
